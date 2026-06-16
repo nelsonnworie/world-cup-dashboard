@@ -5,9 +5,10 @@ import plotly.express as px
 from datetime import datetime
 
 st.set_page_config(
-    page_title="World Cup 2026 Winner Vs Goldern Boot Winner Market Analytics",
+    page_title="World Cup 2026 Winner Vs Golden Boot Winner Market Analytics",
     page_icon="⚽",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"
 )
 
 # ──────────────────────────────────────────
@@ -49,7 +50,7 @@ def get_markets_for_event(event_id):
 # FETCH BOTH EVENTS
 # ──────────────────────────────────────────
 
-st.title("⚽ 2026 World Cup · Prediction Market Analytics")
+st.title("⚽ World Cup 2026 Markets: Winner vs Golden Boot")
 st.markdown(f"*Data sourced from Polymarket Gamma API · Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}*")
 
 # World Cup Winner
